@@ -1,0 +1,66 @@
+body {
+    font-family: Poppins, sans-serif;
+    color: white;
+    background-color: rgb(36, 31, 46);
+}
+header {
+    background-color: rgb(36, 31, 46);
+    width: 100%;
+    border: 10px 2px 100px 2px;
+}
+.texto {
+    margin: 10px;
+}
+.main-title {
+    text-align: center;
+    position: relative;
+}
+img{
+    border-radius: 10px;
+}
+.main-title::after {
+    content: "";
+    border-top: 2px solid white;
+    width: 50%;
+    position: absolute;
+    top: 34px;
+    left: 24.5%;
+}
+.border {
+    border-radius: 15px; /* Bordas arredondadas */
+}
+.carousel-container {
+    width: 100%; /* Mantém a largura 100% dentro da div .border */
+    max-width: 800px; /* Limite máximo de largura */    
+}
+.carousel-inner {
+    max-width: 100%;
+}
+.carousel-item img {
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-height: 400px; /* Altura máxima ajustada para o carousel */
+}
+p {
+    text-align: center; /* Centraliza o texto dentro do parágrafo */
+}
+.coracao {
+    font-size: 50px;
+    color: rgb(255, 252, 252);
+    animation: piscar 1s infinite; /* Animação de piscar */
+    margin-top: 20px; /* Espaço entre o texto e o coração */
+}
+@keyframes piscar {
+    0%, 100% {
+        opacity: 1; /* Totalmente visível */
+    }
+    50% {
+        opacity: 0; /* Totalmente invisível no meio da animação */
+    }
+}
+@media (max-width: 767px) {
+    .border {
+        width: 90%; /* Para dispositivos móveis, ocupa 90% da largura */
+        margin: 10px auto; /* Diminui a margem em telas pequenas */
+    }
+}
