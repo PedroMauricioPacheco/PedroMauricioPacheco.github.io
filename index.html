@@ -65,7 +65,7 @@
         <div class="coracao d-flex justify-content-center">&#10084;</div>
     </main>
     <script>
-        window.onload = function() {
+        document.addEventListener('DOMContentLoaded', function() {
             const dataEscolhida = new Date('2024-08-19'); // Substitua por sua data específica
             const dataAtual = new Date();
             
@@ -77,7 +77,7 @@
             const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
             
             document.getElementById('resultado').textContent = `Se passaram ${diffDays} dias desde ${dataEscolhida.toLocaleDateString()} e nossas vidas mudaram para sempre.`;
-        };
+        });
     </script>
 </body>
 </html>
